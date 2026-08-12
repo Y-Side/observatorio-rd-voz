@@ -267,10 +267,10 @@ function Field({
   optional,
 }: {
   label: string;
-  error?: string;
+  error?: string | undefined;
   children: React.ReactNode;
-  htmlFor?: string;
-  optional?: boolean;
+  htmlFor?: string | undefined;
+  optional?: boolean | undefined;
 }) {
   return (
     <div>
