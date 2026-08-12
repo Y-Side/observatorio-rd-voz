@@ -1,3 +1,4 @@
-graphify-out/
-.lovable/
-AGENTS.md
+# Archivos locales de análisis y configuración del entorno.
+/graphify-out/
+/.lovable/
+/AGENTS.md
