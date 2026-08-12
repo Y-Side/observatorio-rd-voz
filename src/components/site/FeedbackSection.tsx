@@ -27,7 +27,7 @@ const TIMES = ["Ahora", "Hoy", "Ayer", "Otro momento reciente"];
 const EXPERIENCES: { value: Experience; emoji: string; label: string }[] = [
   { value: "mala", emoji: "😕", label: "Mala" },
   { value: "regular", emoji: "😐", label: "Regular" },
-  { value: "buena", emoji: "🙂", label: "Buena" },
+  { value: "buena", emoji: "😊", label: "Buena" },
 ];
 
 type Errors = Partial<Record<"service" | "province" | "area" | "experience" | "situation" | "time", string>>;
