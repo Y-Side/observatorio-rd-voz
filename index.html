@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Comparte tu experiencia con los servicios de electricidad y agua potable en República Dominicana."
+    />
+    <title>Observatorio RD · Electricidad y agua potable</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="#inicio" aria-label="Observatorio RD, inicio"
+          ><span>◎</span> Observatorio <b>RD</b></a
+        >
+        <nav aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a><a href="#participa">Participa</a>
+        </nav>
+        <a class="button header-button" href="#participa">Enviar reporte</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero-content">
+          <div>
+            <p class="eyebrow">SERVICIOS BÁSICOS · REPÚBLICA DOMINICANA</p>
+            <h1>Tu experiencia también cuenta.</h1>
+            <p class="intro">
+              Comparte cómo está funcionando el servicio de electricidad o agua
+              potable en tu comunidad y ayuda a identificar tendencias que
+              puedan requerir atención.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#participa">Compartir mi experiencia</a>
+            </div>
+            <p class="note">
+              Tu reporte se utiliza únicamente como información de apoyo para
+              este proyecto académico.
+            </p>
+          </div>
+          <div
+            class="hero-card"
+            aria-label="Ilustración de comunidades participando"
+          >
+            <div class="card-top">
+              <span>COMUNIDADES PARTICIPANDO</span><b>● Demostración</b>
+            </div>
+            <div class="map">
+              <span class="pin pin-one">●</span
+              ><span class="pin pin-two">●</span
+              ><span class="pin pin-three">●</span
+              ><span class="map-label label-one">⌂ Barrios y sectores</span
+              ><span class="map-label label-two">⌖ 32 provincias</span>
+            </div>
+            <div class="service-summary">
+              <article class="energy">
+                <h2>⚡ Electricidad</h2>
+                <p>Servicio inestable</p>
+              </article>
+              <article class="water">
+                <h2>💧 Agua potable</h2>
+                <p>Servicio normal</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback" id="participa">
+        <div class="container feedback-layout">
+          <div class="participation-copy">
+            <p class="eyebrow">PARTICIPA</p>
+            <h2>Cuéntanos cómo está el servicio en tu zona</h2>
+            <p>
+              Completa este formulario con tu experiencia reciente. No necesitas
+              escribir un reporte técnico: solo dinos qué servicio utilizas,
+              dónde estás y cómo ha sido tu experiencia.
+            </p>
+            <ul>
+              <li>◷ <span>Toma menos de un minuto</span></li>
+              <li>✓ <span>No requiere crear una cuenta</span></li>
+              <li>⌖ <span>Ayuda a identificar patrones por comunidad</span></li>
+            </ul>
+            <p class="privacy">🛡 No incluyas información personal sensible.</p>
+          </div>
+          <form class="feedback-form" action="#participa" method="get">
+            <h2>Enviar feedback</h2>
+            <p>Comparte tu experiencia con un servicio básico.</p>
+            <fieldset>
+              <legend>¿Sobre qué servicio quieres opinar?</legend>
+              <div class="choice-grid service-choices">
+                <label class="choice energy-choice"
+                  ><input
+                    type="radio"
+                    name="servicio"
+                    value="electricidad"
+                    required
+                  /><span>⚡</span> Electricidad</label
+                >
+                <label class="choice water-choice"
+                  ><input
+                    type="radio"
+                    name="servicio"
+                    value="agua"
+                    required
+                  /><span>💧</span> Agua potable</label
+                >
+              </div>
+            </fieldset>
+            <div class="form-row">
+              <p>
+                <label for="provincia">Provincia</label
+                ><select id="provincia" name="provincia" required>
+                  <option value="">Selecciona una provincia</option>
+                  <option>Distrito Nacional</option>
+                  <option>Santo Domingo</option>
+                  <option>Santiago</option>
+                  <option>La Vega</option>
+                  <option>San Cristóbal</option>
+                  <option>San Pedro de Macorís</option>
+                  <option>La Romana</option>
+                  <option>Puerto Plata</option>
+                </select>
+              </p>
+              <p>
+                <label for="sector">Municipio o sector</label
+                ><input
+                  id="sector"
+                  name="sector"
+                  placeholder="Ej. Santo Domingo Este"
+                  required
+                />
+              </p>
+            </div>
+            <fieldset>
+              <legend>¿Cómo ha sido tu experiencia?</legend>
+              <div class="choice-grid experience-choices">
+                <label class="choice"
+                  ><input
+                    type="radio"
+                    name="experiencia"
+                    value="mala"
+                    required
+                  /><span>😕</span>Mala</label
+                ><label class="choice"
+                  ><input
+                    type="radio"
+                    name="experiencia"
+                    value="regular"
+                    required
+                  /><span>😐</span>Regular</label
+                ><label class="choice"
+                  ><input
+                    type="radio"
+                    name="experiencia"
+                    value="buena"
+                    required
+                  /><span>😊</span>Buena</label
+                >
+              </div>
+            </fieldset>
+            <p>
+              <label for="situacion">¿Qué ocurrió?</label
+              ><select id="situacion" name="situacion" required>
+                <option value="">Selecciona una situación</option>
+                <option>Interrupción del servicio</option>
+                <option>Servicio inestable</option>
+                <option>Bajo voltaje</option>
+                <option>Falta de agua</option>
+                <option>Baja presión</option>
+                <option>Servicio irregular</option>
+                <option>Otro</option>
+              </select>
+            </p>
+            <p>
+              <label for="comentario"
+                >Cuéntanos un poco más <small>Opcional</small></label
+              ><textarea
+                id="comentario"
+                name="comentario"
+                rows="4"
+                maxlength="500"
+                placeholder="Describe brevemente lo que has notado con el servicio..."
+              ></textarea>
+            </p>
+            <fieldset>
+              <legend>¿Cuándo ocurrió?</legend>
+              <div class="time-choices">
+                <label
+                  ><input type="radio" name="momento" value="ahora" required />
+                  Ahora</label
+                ><label
+                  ><input type="radio" name="momento" value="hoy" required />
+                  Hoy</label
+                ><label
+                  ><input type="radio" name="momento" value="ayer" required />
+                  Ayer</label
+                ><label
+                  ><input
+                    type="radio"
+                    name="momento"
+                    value="reciente"
+                    required
+                  />
+                  Otro momento reciente</label
+                >
+              </div>
+            </fieldset>
+            <button class="button" type="submit">Enviar mi reporte</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
