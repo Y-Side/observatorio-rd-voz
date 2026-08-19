@@ -100,17 +100,24 @@ nav a:hover { color: var(--blue); }
 .card-top b { color: #25754b; }
 
 .map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
   margin: 20px 0;
-  padding: 24px;
+  padding: 12px;
   border: 1px solid #b8dce6;
   border-radius: 6px;
   background: #eaf8fb;
 }
 
-.pin { margin-right: 12px; color: var(--blue); font-size: 22px; }
-.pin-two { color: var(--yellow); }
-.pin-three { color: var(--water); }
-.map-label { display: block; margin-top: 12px; color: var(--navy); font-size: 14px; }
+.country-map {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: auto;
+}
 
 .service-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
